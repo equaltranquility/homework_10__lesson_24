@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://fonts.cdnfonts.com/css/abyssinica-sil"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Form. Homework #10 - Frontend</title>
+  </head>
+
+  <body>
+    <div class="wrap-login">
+      <form class="form" method="post" action="/submit">
+        <span class="form__star" id="email-star">*</span>
+        <span class="form__star" id="password-star">*</span>
+        <span class="form__star" id="checkbox-star">*</span>
+        <header class="form__title-wrapper">
+          <span class="form__title-text">Регистрация</span>
+        </header>
+        <div class="form__email-wrapper">
+          <label class="form__email-label" id="email-label" for="email-input"
+            >Email</label
+          >
+          <input
+            class="form__input"
+            type="email"
+            id="email-input"
+            placeholder="Введите email"
+            value=""
+            required
+          />
+          <p class="form__input-validation" id="email-validation-text"></p>
+        </div>
+        <div class="form__password-wrapper">
+          <label
+            class="form__password-label"
+            id="password-label"
+            for="password-input"
+            >Пароль</label
+          >
+          <input
+            class="form__input"
+            type="password"
+            id="password-input"
+            placeholder="Введите пароль"
+            required
+          />
+          <p class="form__input-validation" id="password-validation-text"></p>
+        </div>
+        <div class="form__checkbox-wrapper">
+          <input
+            class="form__checkbox-input"
+            type="checkbox"
+            id="checkbox-input"
+          />
+          <div class="form__checkbox-mark"></div>
+          <label class="form__checkbox-label" for="checkbox-input">
+            <span>
+              Я согласен c
+              <a href="https://en.wikipedia.org/wiki/End-user_license_agreement"
+                >Правилами пользования приложением</a
+              ></span
+            >
+          </label>
+        </div>
+        <p class="form__input-validation" id="checkbox-validation-text"></p>
+        <div class="form__button-wrapper">
+          <button class="form__button" type="submit">Регистрация</button>
+        </div>
+      </form>
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
